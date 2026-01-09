@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite</title>
+	<link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="/assets/main-CGLXRoTp.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-Bsl3PPhv.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo logo">
+      <img src="/assets/logo-YEgf6RTj.svg" alt="logo">
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li><a class="menu__link" href="#services">Услуги</a></li>
+        <li><a class="menu__link" href="#doctors">Специалисты</a></li>
+        <li><a class="menu__link" href="#about">О клинике</a></li>
+        <li><a class="menu__link" href="#">Акции</a></li>
+        <li><a class="menu__link" href="#reviews">Отзывы</a></li>
+        <li><a class="menu__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="socials-block menu__socials-block">
+      <div class="socials-block__phone">
+        <a class="socials-block__link" href="tel:+7(963)225-54-45">+7 (963) 225-54-45</a>
+      </div>
+      <div class="socials-block__socials">
+        <a class="socials-block__link" href="#">
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M8.50212 0H8.49788C3.81119 0 0 4.0365 0 9C0 10.9688 0.59925 12.7935 1.61819 14.2751L0.558875 17.6186L3.82606 16.5128C5.17013 17.4555 6.77344 18 8.50212 18C13.1888 18 17 13.9624 17 9C17 4.03763 13.1888 0 8.50212 0ZM13.4481 12.7091C13.243 13.3223 12.4291 13.8308 11.7799 13.9792C11.3358 14.0794 10.7557 14.1593 8.80281 13.302C6.30487 12.2063 4.69625 9.51863 4.57088 9.34425C4.45081 9.16988 3.5615 7.92113 3.5615 6.62963C3.5615 5.33813 4.18094 4.70925 4.43062 4.43925C4.63569 4.21763 4.97462 4.11637 5.29975 4.11637C5.40494 4.11637 5.4995 4.122 5.5845 4.1265C5.83419 4.13775 5.95956 4.1535 6.12425 4.57088C6.32931 5.094 6.82869 6.3855 6.88819 6.51825C6.94875 6.651 7.00931 6.831 6.92431 7.00538C6.84462 7.18538 6.7745 7.26525 6.64913 7.41825C6.52375 7.57125 6.40475 7.68825 6.27938 7.8525C6.16463 7.99538 6.035 8.14838 6.1795 8.41275C6.324 8.6715 6.82337 9.53438 7.55862 10.2274C8.50744 11.1218 9.27669 11.4075 9.55188 11.529C9.75694 11.619 10.0013 11.5976 10.1511 11.4289C10.3413 11.2118 10.5761 10.8518 10.8152 10.4974C10.9852 10.2431 11.1998 10.2116 11.4251 10.3016C11.6546 10.386 12.869 11.0216 13.1187 11.1533C13.3684 11.286 13.5331 11.349 13.5936 11.4604C13.6531 11.5718 13.6531 12.0949 13.4481 12.7091Z"
+              fill="currentColor" ></path>
+
+          </svg>
+        </a>
+        <a class="socials-block__link" href="#">
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M0.418964 7.88497L4.78926 9.38135L15.1648 2.98642C15.3152 2.89368 15.4693 3.09962 15.3396 3.22L7.48453 10.5093L7.19242 14.5901C7.17018 14.9006 7.54111 15.0734 7.76124 14.8552L10.1798 12.4575L14.6012 15.8318C15.0778 16.1956 15.7678 15.9392 15.8964 15.3507L18.975 1.25802C19.1506 0.454076 18.3693 -0.224316 17.6067 0.0700983L0.396727 6.71404C-0.143144 6.92249 -0.128439 7.69758 0.418964 7.88497Z"
+              fill="currentColor " ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <button class='burger-button' type="button">
+      <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+        <path class="burger-button__line burger-button__line--1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" ></path>
+        <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80" ></path>
+        <path class="burger-button__line burger-button__line--3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" ></path>
+      </svg>
+    </button>
+  </div>
+</header>
+    <main>
+      <div class="hero hero__container">
+  <div class="hero__content">
+    <div class="title__block">
+      <h1 class="title hero__title">Авторская стоматология <span class="title-orange">Ивана Абрамова</span></h1>
+      <div class="hero__subtitle-block">
+        <p class="hero__subtitle">Экспертный уровень стоматологии. Сочетание проверенных методов и инноваций для здоровья вашей улыбки.</p>
+        <a href="services.html" data-da=".hero__title,1280,last" class="link hero__link">Перейти к услугам</a>
+      </div>
+    </div>
+    <div class="swiper hero__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero__slide">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/assets/hero-slide-1-desc-GP4H4CQg.jpg">
+            <img src="/assets/hero-slide-1-DblZINnI.jpg" alt="a cute kitten">
+          </picture>
+        </div>
+        <div class="swiper-slide hero__slide">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/assets/hero-slide-1-desc-GP4H4CQg.jpg">
+            <img src="/assets/hero-slide-1-DblZINnI.jpg" alt="a cute kitten">
+          </picture>
+        </div>
+        <div class="swiper-slide hero__slide">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/assets/hero-slide-1-desc-GP4H4CQg.jpg">
+            <img src="/assets/hero-slide-1-DblZINnI.jpg" alt="a cute kitten">
+          </picture>
+        </div>
+      </div>
+      <div class="hero__swiper-pagination">1</div>
+    </div>
+    <button class="hero__button orange-button" type="button">Записаться на прием</button>
+    <a href="#about" class="hero__arrow"></a>
+  </div>
+</div>
+      <section class="about" id="about">
+  <div class="about__container">
+    <span class="about__slogan">— Почему клиенты выбирают нас?</span>
+    <h2 class="about__title title-h2">Немного <span class="title-orange">О Клинике</span></h2>
+    <div class="tooth-decor" data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="80" aria-hidden="true"></div>
+    <ul class="about__list">
+      <li class="about__item">
+        <div class="about__icon"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M4.05599 1.27763C2.23542 1.98685 0.673887 2.60742 0.586325 2.65707C0.382012 2.77409 0.1777 2.9975 0.0755434 3.20672C-0.00107384 3.36629 -0.00472227 3.41594 0.00257461 4.18899C0.0427074 7.83439 0.812528 10.8663 2.22812 12.9656C2.6331 13.5649 2.93227 13.923 3.44305 14.4231C4.33327 15.2989 5.06661 15.7848 7.23743 16.9443C7.40526 17.033 7.64606 17.0153 7.83942 16.8947C7.92334 16.845 8.28453 16.6429 8.64208 16.4514C10.0723 15.6784 10.7217 15.228 11.5426 14.4231C12.867 13.1287 13.7791 11.4585 14.3482 9.28829C14.7167 7.86985 14.8992 6.53296 14.9758 4.61807C15.0123 3.73154 15.0086 3.5897 14.9575 3.39466C14.8663 3.05069 14.6401 2.77054 14.3191 2.61097C13.9469 2.43012 7.67524 0.0187651 7.52931 0.00103457C7.37972 -0.0131499 7.06595 0.103872 4.05599 1.27763Z"
+              fill="url(#paint0_linear_161_2310)" ></path>
+            <defs>
+              <linearGradient id="paint0_linear_161_2310" x1="0.35097" y1="3.28617e-07" x2="16.5258" y2="14.9725" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DBAA46" ></stop>
+                <stop offset="1" stop-color="#D8CB3A" ></stop>
+              </linearGradient>
+            </defs>
+          </svg></div>
+        <h3 class="about__item-title">Без боли<br> и страха</h3>
+        <p class="about__item-text">Лечение, которое вы перенесёте без дискомфорта</p>
+      </li>
+      <li class="about__item">
+        <div class="about__icon"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M12.807 0C11.3029 0 9.9484 0.647076 9 1.68077C8.05168 0.647076 6.6971 0 5.19301 0C2.32504 0 0 2.3518 0 5.25299C0 6.03248 0.136139 6.78262 0.374565 7.49894C0.374565 7.49894 0.590764 8.14527 0.782288 8.50106C2.97123 13.0501 9 16 9 16C9 16 15.0288 13.0501 17.2177 8.50106C17.2177 8.50106 17.5001 7.89493 17.6254 7.49894C17.8531 6.77931 18 6.03248 18 5.25299C18 2.3518 15.675 0 12.807 0Z"
+              fill="url(#paint0_linear_161_2318)" ></path>
+            <defs>
+              <linearGradient id="paint0_linear_161_2318" x1="0.421164" y1="3.09286e-07" x2="15.4827" y2="17.7761" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DBAA46" ></stop>
+                <stop offset="1" stop-color="#D8CB3A" ></stop>
+              </linearGradient>
+            </defs>
+          </svg></div>
+        <h3 class="about__item-title">Забота<br> о каждом</h3>
+        <p class="about__item-text">Индивидуальный подход и внимание к вашим пожеланиям</p>
+      </li>
+      <li class="about__item">
+        <div class="about__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M8 8C6.9 8 5.95833 7.60833 5.175 6.825C4.39167 6.04167 4 5.1 4 4C4 2.9 4.39167 1.95833 5.175 1.175C5.95833 0.391667 6.9 0 8 0C9.1 0 10.0417 0.391667 10.825 1.175C11.6083 1.95833 12 2.9 12 4C12 5.1 11.6083 6.04167 10.825 6.825C10.0417 7.60833 9.1 8 8 8ZM0 14V13.2C0 12.6333 0.146 12.1127 0.438 11.638C0.73 11.1633 1.11733 10.8007 1.6 10.55C2.63333 10.0333 3.68333 9.646 4.75 9.388C5.81667 9.13 6.9 9.00067 8 9C9.1 8.99933 10.1833 9.12866 11.25 9.388C12.3167 9.64733 13.3667 10.0347 14.4 10.55C14.8833 10.8 15.271 11.1627 15.563 11.638C15.855 12.1133 16.0007 12.634 16 13.2V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14Z"
+              fill="url(#paint0_linear_161_2324)" ></path>
+            <defs>
+              <linearGradient id="paint0_linear_161_2324" x1="0.374368" y1="3.09286e-07" x2="15.6256" y2="16" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DBAA46" ></stop>
+                <stop offset="1" stop-color="#D8CB3A" ></stop>
+              </linearGradient>
+            </defs>
+          </svg></div>
+        <h3 class="about__item-title">Команда профессионалов</h3>
+        <p class="about__item-text">Эксперты в своей области объединены любовью к делу</p>
+      </li>
+      <li class="about__item about__item-image">
+        <img src="/assets/about-img-5Twojqls.jpg" alt="about-img">
+      </li>
+      <li class="about__item">
+        <div class="about__icon"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.4904 4.57412C17.435 4.57157 17.3796 4.57063 17.3241 4.57129H15.0107C13.1183 4.57129 11.4975 6.05929 11.4975 8C11.4975 9.94071 13.1183 11.4287 15.0117 11.4287H17.3232C17.3814 11.4293 17.4369 11.4281 17.4894 11.4249C17.8799 11.3998 18.2479 11.2351 18.5251 10.9615C18.8022 10.6878 18.9696 10.3237 18.9962 9.93694C19 9.88141 19 9.82212 19 9.76753V6.23247C19 6.17788 19 6.11859 18.9962 6.06306C18.9697 5.67644 18.8024 5.31251 18.5254 5.03884C18.2485 4.76517 17.8807 4.60038 17.4904 4.57506M14.8084 8.91482C15.2958 8.91482 15.6919 8.50635 15.6919 8.00094C15.6919 7.49553 15.2958 7.08706 14.8084 7.08706C14.321 7.08706 13.9258 7.49553 13.9258 8.00094C13.9258 8.50635 14.3201 8.91482 14.8084 8.91482Z"
+              fill="url(#paint0_linear_161_2330)" ></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.3232 12.8C17.355 12.7989 17.3866 12.8052 17.4156 12.8184C17.4445 12.8317 17.4698 12.8515 17.4896 12.8762C17.5094 12.9009 17.523 12.9299 17.5294 12.9608C17.5358 12.9917 17.5348 13.0237 17.5265 13.0541C17.3422 13.7054 17.0505 14.2607 16.5821 14.7275C15.8971 15.4118 15.0279 15.7158 13.9543 15.8598C12.9111 16 11.5792 16 9.89569 16H7.96045C6.27791 16 4.945 16 3.90184 15.8598C2.82829 15.7158 1.959 15.4118 1.27401 14.7275C0.589029 14.0452 0.285014 13.1765 0.140607 12.1054C0 11.0626 0 9.73176 0 8.05177V7.94824C0 6.26824 0 4.93647 0.140607 3.89553C0.285014 2.82353 0.589029 1.95765 1.27306 1.27153C1.95805 0.588235 2.82734 0.283294 3.90089 0.140235C4.945 1.54271e-07 6.27791 0 7.96045 0H9.89569C11.5782 0 12.9111 1.54271e-07 13.9543 0.140235C15.0279 0.284235 15.8971 0.588235 16.5821 1.27153C17.0505 1.73929 17.3422 2.29459 17.5265 2.94682C17.5347 2.97721 17.5355 3.00907 17.529 3.03985C17.5226 3.07063 17.5089 3.09949 17.4891 3.12409C17.4694 3.1487 17.4441 3.16839 17.4152 3.18157C17.3864 3.19475 17.3549 3.20106 17.3232 3.2H15.0117C12.4143 3.2 10.1256 5.24894 10.1256 8C10.1256 10.7511 12.4152 12.8 15.0127 12.8H17.3232ZM3.43347 3.65741C3.34302 3.65778 3.25353 3.6758 3.1701 3.71043C3.08668 3.74507 3.01096 3.79564 2.94726 3.85926C2.88357 3.92289 2.83314 3.99832 2.79888 4.08125C2.76461 4.16418 2.74716 4.25298 2.74754 4.34259C2.74754 4.72188 3.0544 5.02871 3.43347 5.02871H7.09686C7.47687 5.02871 7.78374 4.72188 7.78374 4.34259C7.78424 4.16153 7.71219 3.98767 7.5834 3.85921C7.45461 3.73074 7.27962 3.65816 7.09686 3.65741H3.43347Z"
+              fill="url(#paint1_linear_161_2330)" ></path>
+            <defs>
+              <linearGradient id="paint0_linear_161_2330" x1="0.444562" y1="3.09286e-07" x2="15.3519" y2="18.5715" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DBAA46" ></stop>
+                <stop offset="1" stop-color="#D8CB3A" ></stop>
+              </linearGradient>
+              <linearGradient id="paint1_linear_161_2330" x1="0.444562" y1="3.09286e-07" x2="15.3519" y2="18.5715" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DBAA46" ></stop>
+                <stop offset="1" stop-color="#D8CB3A" ></stop>
+              </linearGradient>
+            </defs>
+          </svg></div>
+        <h3 class="about__item-title">Прозрачные<br> цены</h3>
+        <p class="about__item-text">Честная стоимость до начала любого лечения</p>
+      </li>
+    </ul>
+    <h2 class="about__title title-h2 about__title-bottom">Комфорт и забота <span class="title-orange">для всей семьи</span></h2>
+  </div>
+</section>
+      <section class="services" id="services">
+  <div class="services__container">
+    <div class="services__grid-container">
+      <h2 class="title-h2 services__title services__grid">Полный спектр<br> <span class="title-orange">стоматологических услуг</span></h2>
+      <a href="#" class="services__card services-card services__grid">
+        <h3 class="services-card__title">Гигиена</h3>
+        <p class="services-card__lead">Гигиена полости рта и зубов методом AirFlow, Air Unit др.</p>
+        <img src="/assets/1-BTG9nTdo.jpg" alt="" class="services-card__img" aria-hidden="true">
+      </a>
+      <a href="#" class="services__card services-card services__grid">
+        <h3 class="services-card__title">Терапия</h3>
+        <p class="services-card__lead">Лечение кариеса, пульпита, периодонтита и др.</p>
+        <img src="/assets/2-C9vdTA5R.jpg" alt="" class="services-card__img" aria-hidden="true">
+      </a>
+      <a href="#" class="services__card services-card services__grid">
+        <h3 class="services-card__title">Ортодонтия</h3>
+        <p class="services-card__lead">Элайнеры, брекеты и трейнеры</p>
+        <img src="/assets/3-CwLJkIkQ.jpg" alt="" class="services-card__img" aria-hidden="true">
+      </a>
+      <a href="#" class="services__card services-card services__grid">
+        <h3 class="services-card__title">Имплантация</h3>
+        <p class="services-card__lead">Имплантация зубов<br> методами <b>«All-on-4»</b>, <b>«All-on-6»</b></p>
+        <img src="/assets/4-mxG0xyM2.jpg" alt="" class="services-card__img" aria-hidden="true">
+      </a>
+    </div>
+    <a href="all-services.html" class="services__button orange-button">Смотреть все услуги</a>
+  </div>
+</section>
+      <section class="recording" id="recording">
+  <div class="recording__container">
+    <div class="recording__content">
+      <h2 class="title-h2 recording__title">Запишитесь на Прием<br> <span class="title-orange">к лучшим специалистам</span> прямо сейчас</h2>
+      <form action="" class="recording__form">
+        <div class="recording__group">
+          <label class="recording__label" for="communication">Выберите удобный способ связи</label>
+          <select name="communication" id="communication">
+            <option value="phone">Позвоните мне</option>
+            <option value="tg">Телеграм</option>
+            <option value="max">Мах</option>
+          </select>
+        </div>
+        <div class="recording__group">
+          <label class="recording__label" for="name">Ваше имя</label>
+          <input class="recording__input" type="text" id="name" name="name" placeholder="Введите имя">
+        </div>
+        <div class="recording__group">
+          <label class="recording__label" for="phone">Номер телефона</label>
+          <input class="recording__input" id="phone" type="tel" inputmode="numeric" autocomplete="tel" >
+        </div>
+        <button type="submit" class="orange-button recording__button">Записаться на прием</button>
+      </form>
+    </div>
+    <div class="recording__image">
+      <img src="/assets/persone-Bj7Tslzq.jpg" alt="" class="recording__img">
+    </div>
+  </div>
+</section>
+      <section class="doctors" id="doctors">
+  <div class="doctors__container">
+    <div class="doctors__title-block">
+      <span class="doctors__slogan">— Врачи с опытом от 10 лет</span>
+      <h2 class="title-h2 doctors__title">Наши <span class="title-orange">Врачи</span></h2>
+    </div>
+    <div class="swiper doctors__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide doctors__slide">
+          <img class="doctors__img" src="/assets/doctor-D8qt52Ba.png" alt="Врач 1">
+          <div class="doctors__info">
+            <h3 class="doctors__name">Абрамов Иван Викторович</h3>
+            <p class="doctors__specialty">Специальность</p>
+          </div>
+        </div>
+        <div class="swiper-slide doctors__slide">
+          <img class="doctors__img" src="/assets/doctor2-DU-Q1ue1.png" alt="Врач 1">
+          <div class="doctors__info">
+            <h3 class="doctors__name">ФИО</h3>
+            <p class="doctors__specialty">Специальность</p>
+          </div>
+        </div>
+        <div class="swiper-slide doctors__slide">
+          <img class="doctors__img" src="/assets/doctor2-DU-Q1ue1.png" alt="Врач 1">
+          <div class="doctors__info">
+            <h3 class="doctors__name">ФИО</h3>
+            <p class="doctors__specialty">Специальность</p>
+          </div>
+        </div>
+        <div class="swiper-slide doctors__slide">
+          <img class="doctors__img" src="/assets/doctor2-DU-Q1ue1.png" alt="Врач 1">
+          <div class="doctors__info">
+            <h3 class="doctors__name">ФИО</h3>
+            <p class="doctors__specialty">Специальность</p>
+          </div>
+        </div>
+        <div class="swiper-slide doctors__slide">
+          <img class="doctors__img" src="/assets/doctor2-DU-Q1ue1.png" alt="Врач 1">
+          <div class="doctors__info">
+            <h3 class="doctors__name">ФИО</h3>
+            <p class="doctors__specialty">Специальность</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-navigation">
+        <div class="swiper-button-prev doctors__slider-button--prev"></div>
+        <div class="swiper-button-next doctors__slider-button--next"></div>
+      </div>
+      <h2 class="title-h2 doctors__slider-title">У нас работают только<br> <span class="title-orange">Профессионалы<br> </span>своего дела</h2>
+    </div>
+  </div>
+</section>
+      <section class="reviews" id="reviews">
+  <div class="reviews__container">
+    <div class="reviews__title-block">
+      <h2 class="reviews__title title-h2">Отзывы</h2>
+      <button class="reviews__button orange-button" data-popup="review-popup">Оставить отзыв</button>
+      <div class="swiper-navigation">
+        <div class="swiper-button-prev reviews__slider-button--prev"></div>
+        <div class="swiper-button-next reviews__slider-button--next"></div>
+      </div>
+    </div>
+    <div class="swiper reviews__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">После лечения у Ивана Викторовича перестала бояться стоматологов😀делает все быстро,качественно. Всегда на связи. В экстренных ситуациях помогает сразу. Цены вполне адекватные для частной стоматологии. Уютно, чисто. Приветливый персонал. Лечим зубы всей семьей более
+            10 лет. Иван Викторович ...</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Лучший стоматолог в Туле! Ездим из Москвы уже более 10 лет. Ставил импланты, лечил зубы, делаем чистку и тд! Профессионал высшего уровня, живет своей работой! Всегда на связи и работает по самым приятным ценам!! Рекомендую лучшую стоматологию в Туле!</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAkISURBVHgBnVgLcFTVGf727t3d7JLHBggxIYGNAVQgkFFoeQhsUSDEUQqlUjAW0JGX0AC12Do6JFBop9gCpXZKfPQxRYYOMNA2yMg4ARmEREiC0YkBQpY8IDEk2V3z3Nfx/+/u3dy8IHhm/r275557/m+//3muDg84ampq7DqdbpEkSelCCBuLeo/mHfTbQV9L6XoyOTn5LB5g6AazqKqqyirL8mZSlk0grCSsWJEQCOVKAMISCAT46vD7/WdJclNSUhz306MbDAhSnq3X6xUQqvQGog4NEOVKQJQrSS4xlfO9wBAQm9FoLCDFNgICFi0QrbBiLRgtOyqgkDi8Xu+PBmJJ399kbW1tOim/SKw8ZDAYFACtra04fvw4jhw5gtLSUkRGRiIxMTG4SQgoD7fbjWPHjuHw4cMoKSnBkCFDwusIoLWpqWlVenp6YX5+fjVP4V6DgZC0NDQ0iMbGRkGKhclkEimjEsSBP7wmPvvofZF/8gPx/JIFglgR2dnZgoCKiooKYbFYhG30SHFg33Zx8fxxkX/iA7HsJwsEARVr164VBET5bqD9iouLp9wTyJ07d2wqEH7Q6XSKyY+lis67X4iOyjOi8+YZ4Wn+XHhdJUFpqxM7c7YooOLihoqu9rrueyQeZ7Hoarki2l0O8faeXUJHQF7I+5t4Me+geHL2bBe7AjSuouvFShWZxsamuXz5MqT2WsxMSyYThJyV/EAaEQ9yhPAz7BtyxHD4fU6QU/T5g3z/Rk0rxqfNxoLfvI7pL61CwOvDhXffR8H+PyMpKWlKdXX1FV4rqQ9R/sgh29sIjOIDCzMyYLdPUYCEw5j9QgNEAUjz/q6mfoGo9wsvFSFl+jTYN22E3+Ml4D7MXb8Oo6dOwbhx495U18r8wXSRLberUXP79m3M/OEkeJsa6LfUvbHRiO8zspY9jdQx4zF3VAreKLkCyR/AzknpOHXqFIOxU4RZKcKcChgyy3aOBjUqOAqWL5kXNk94yAboaC5Am/XOL30Yob0CPj+UZWSq6Y8n4JbjKiZOWwCDxQJyYMTHx8Pj8Vg5mdKqXClEpV0FwkqysrJIr6GPQkPMUCSNeQqvbMiBkAyKP+iN0dBb4qAnv1HXO253YHjSTPzxncMIaHJQXJQXG198Bndv3GBfgUoA7bOZ70uhWmNT80ReXh5saXaUlV3rAUSSdXj4ETsuXDiDWzV3UF5Rg0PHz0EypxIgcnJTMsakPQPJMhJjH5uBluZb+N2ev0KY4xVmlD9NaSV351swm83QZnMuMQoOiqC9nPIp2yI1dQw8AT22/r0c761/BLcK/xPMroTT/dFdRA2PgbuxGUNXT4PeZCYmEpG1ZivavnWT+SSUFV/C/t9vwZNzZsHzSRkiRQTc37TAlBIDy4xg4quoasO2N3bj6NGj8JEjk7+wqTg772M60pnePXv2YPqybKw/UAbXXTcaGl3QD4tXgHz7cRMxoEdbWyuZxAjXh5chvJ3K5l0dHbSRDz6vhwLNTyyZYOpyQtfmC64fYoCvoV1JIn7ytezNv8SOHTsQcg8tO+kSm4gnt23bBn3dZfxpVSJM5GDP/eJdvJCVTc5KfhFj6M5ItFZOjISv3YnVWYsUNsy03jIkCpUVX2Gu3Q59tBGiozvU/e1e6Ex6mGLjUfBpESZMmBAGo16phtnYTJzuodagoqIibPj1XkV5ZfFpuOuvwNDRBO+dLnjqOmFKNsP4aAJEgIqhbMEra36Ffx76L2KioyhXXYUZLqXi6EwS2j+tI0fXIXLWSIiuAMY/sQiHDh9FWlqaYn4unmwqNhObqwcYTngMiEPOQD506eJFzH9qDirO/zvshIozx8RQdVSyQjCiImIojNsGTHw8blR3YvFPV+Pq1avhqt4bjKxuGM4PRBkVyLCi9i4/PGYrjO0t4TWBFif0I0YQO8F8E+hy434jI3MJiku/HPC+Ula4VaTvNu2kasvr169j3rx5WJG1CTN/kNbzaS4LkVEYzKBqjuraepw+fRpLly5VehxVl4YIh45SfwElHjuHtlqX2FRmswWjJ87B5Lk/71dBXLQMgyxhsIP/YH1tJU68tx27du3Gxo2vKvNsnpCclQllKSm3a1tFbog2HfwS/oCMCHMMzQf6bJ4UZ4DFqMfgh8ATJhmZK9Zj6+LxmD9/HsaOHatlp1QmRCcJzGYVCDVJsE2cDb9Xwoe/XYgotEAOFUtm7GZNIx4ePZLSfDfAmjqaS0mCl5xRHU1NTlhjhylsq8+y2f9yqh5vHytDZuZk0vV1uDUl/SdkqpZnKaKcNGFlQIWFhRgz5VmYI2Nh9DTi2ulcUhxUYIi2wPDoOlSUnITf5QrTnzpjOUXJOci+bid/M/cAMhetxKxZs8JzN2/exNKVa7Au519oaKjX9ssOatbPqYVynwahQqkgH2YQQmgcTXW2gOjReIcme8z119xyCOup8kdYgmxpGvWzCnuhRfsp3p18Q1WqKrl3xzz4oYKsKC1AzktzgvC7Tw+5YTDc2NDCfZyAOJq8ng4l+3d0eqCLHwpjbCRJFKTYYChL5ljIMdawcANmosKpj4gNi4kqM++lAqmsrMTUqVNx7HwRHNdKFB9ipghMTp+jCx/YuAcuLy8X0cMSxZq9JWLaoq1Bm2mEilmfucGIKcIsiqtqxMkbreJ8vUus3vK6oBzWqMXQo3vi0wGxU7IgI8M6bPyzSH/6ZUic9nWhg1t3tUTKQxEUZffq9kTIxQQ3iHjnrZX44rNTOP+NG1t/9jzKP7/gyzt4MG3FihVf9wuGB5+biLqCDa9utOb//3+IGzWh36VGA5V/3cBJj4GMmzQTL2/bjdeWT4dekuFsot564XP4+Mg/OLIet9lsJRiIGS0gsnMBFU9rW1tbv0db5eF++uCw49OVOzpe09zcrPzmgky9jGvx4sUZmZmZl3o/OyDPbDLycuWsrS0TakOkgtEC0gLRnrU5MEJRc8+z9n1fiVBvup0U5mgP/9pDvwpKC0bNV5o3EHTCwz5OIRy5A+ka7PsZPmUyqHDz3psVdfR6JeLkhHo/EA8ERjuIqTmk6MfcszKw3m+uWLj4EosnEhISzuEBxnfQ7wUzDyIqQQAAAABJRU5ErkJggg==" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Отличный специалист, грамотный Доктор, золотые руки, очень приятный в общении, с ним не страшно))) и всё как надо! Отличное соотношение цены-качества! Много лет пользуемся его услугами-и всегда всё на отлично!!!</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Лучшее место для моих зубиков!
+            Иван Викторович -прекрасный врач, после него Вы точно не будете бояться стоматологов и лечил зубики ,и ставил импланты, я довольна, каждый год хожу на осмотры с удовольствием. Была на чистке, прекрасный врач сделала чистку, ни единого ...</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">После лечения у Ивана Викторовича перестала бояться стоматологов😀делает все быстро,качественно. Всегда на связи. В экстренных ситуациях помогает сразу. Цены вполне адекватные для частной стоматологии. Уютно, чисто. Приветливый персонал. Лечим зубы всей семьей более
+            10 лет. Иван Викторович ...</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Лучший стоматолог в Туле! Ездим из Москвы уже более 10 лет. Ставил импланты, лечил зубы, делаем чистку и тд! Профессионал высшего уровня, живет своей работой! Всегда на связи и работает по самым приятным ценам!! Рекомендую лучшую стоматологию в Туле!</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Отличный специалист, грамотный Доктор, золотые руки, очень приятный в общении, с ним не страшно))) и всё как надо! Отличное соотношение цены-качества! Много лет пользуемся его услугами-и всегда всё на отлично!!!</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__header">
+            <img src="data:image/png;base64,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" alt="avatar" class="review__avatar">
+            <div class="review__block">
+              <div class="review__name">ФИО</div>
+              <div class="review__rating">
+                <span>Оценка: </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAQCAYAAAC4LkmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgB7ZbBbhtHDIbJWRtFgSK2n8DqradmFaAFerJU9NBb1Cew/QRFn6CPkD6C8ySWL/WhgLvOA8TqNShgATnYgTRkfnJm11IieWUJSHIwBUGr3fnmJzkczhI92qN9ETY5/6V3c97r0Zpm7Cb85J/PrN8S/9ayB1JMD5liB5dDWsNCQYfK2lmXF50eUrGBPkO/oM66vBaC+Jf7z4tuItMdLuQKgVPU2P3mx78reoBl/rWygJdna/JXStCnNfW35DXST9NN9O+JPywCQ6F/WtD2LQL/Tg+0xCsTvkWgh/PbZDwuRNfiTd+8hwdr+b+tSZ+X6/PN+a+dEG5LVdovUNqiuissR5448uSNOdAQtVOh/sdT0Uui6WivW41sAuO3w6QUjfsEXp2PR1bL4nyc4WVMEi6nH/BBb0uMmeEFvKlHRKHXonIGNutPoE/zPPSZwWvsIODEI+mmThTHmAP6UuE7xncBn+IPH+kL9OM1rs+MR0Rj3HD/0eNusaH5BR52IjqLrZNtkZQ0W3XdwdUAz5+rCocgVyL0813ub1HO4IPuQ5TN4cR7xRAzeJUBngwgpBrif5i6P8tzwS+sH1qolCvN9Mk90D3ca/SRoBEezvHmv/fT4P4bZx9fOg20C9WBBn1uhYLe95H/TfymjzncTy8cm4P2Mj+wYlCNIzzoh69/Go4g1+eglQ9kuGVwwG+GNdcOPhVEn9WrZVbzGHdZr7IHnSvW/4c0J8Zdimj3Qz6K9jG+otweMJIzh3liCoJ981WYqbtQn72iOPtpla7+q2lO8nKQpf43+pR98Fyk65xEu1dhrOs3h8P1v73dr6aTUwwqvUzvxCiX7RBO/wZoTAvM+Wi8lk3i2KsvBbIyD/1UreruU6pizHS2Cg/dp0mzSbZVELf5r+Bvsr7vlpqn5neObw6Hve5wjBPsD0+WVRx7xVnlORhC/GuZaMMreKpXKacsNdmV+bTJ8sp70tKdEKiVZ/BWdepbtp5H/X8bz7X/HrN47E3S3P95fu49LmzRgb1BpVRFanqVB88dajH0vwPvCnWl0V2/kvROdz8P/brP5VM5NWjfAe28mP+mpsKUT0Vn7X+glfRn+jsn3o85695z/NzrCIaXaYs6cIICPqGc8ajTHrU5TlzOVBp4Oam3DayVh15Z9xTTRn9q9HUF/ZrnVHHg9WVdtfBlJb5ZNPXYX961Kp3j5xLHZP2F7OjvPykvjnfK6vgmvvsWEw0xsmzVDdZfZMgivZ1ZHnOK9677DacaXiv0FIH3an11Xoe6gr6a/4w3/aD9nRkegZ9i6Z+uwmOxhq7fvTh+8n2jf4bDZjn/9uKHg2XP3rz67oha7D7+/w35N5+Cf7WZ/4+2gr0HYtTc8xx44isAAAAASUVORK5CYII=" alt="rating">
+              </div>
+            </div>
+            <picture class="review__yandex">
+              
+              <source media="(min-width: 768px)" srcset="/assets/yandex-large-BRA4sreM.svg"> 
+
+              
+              <img src="data:image/svg+xml,%3csvg%20width='65'%20height='17'%20viewBox='0%200%2065%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.8'%3e%3cpath%20d='M23.9139%2014.107H25.9188V2.893H23.0021C20.0647%202.893%2018.5261%204.3603%2018.5261%206.52343C18.5261%208.24789%2019.3706%209.26643%2020.8781%2010.3152L18.2567%2014.107H20.4326L23.3493%209.86141L22.339%209.20088C21.1112%208.39411%2020.5155%207.76383%2020.5155%206.40746C20.5155%205.21244%2021.3754%204.40568%2023.0177%204.40568H23.9139V14.107ZM62.5871%2014.2684C63.4989%2014.2684%2064.1465%2014.107%2064.6283%2013.7641V12.201C64.1309%2012.5389%2063.5352%2012.7506%2062.7063%2012.7506C61.2972%2012.7506%2060.7169%2011.6867%2060.7169%2010.0076C60.7169%208.24789%2061.4267%207.34532%2062.7218%207.34532C63.4834%207.34532%2064.2294%207.60248%2064.6283%207.84451V6.21585C64.2138%205.98895%2063.4834%205.8276%2062.5042%205.8276C59.9865%205.8276%2058.6758%207.58735%2058.6758%2010.053C58.6758%2012.7658%2059.9502%2014.2684%2062.5871%2014.2684ZM50.2521%2013.5574V11.9892C49.6408%2012.3926%2048.615%2012.7506%2047.6515%2012.7506C46.2112%2012.7506%2045.6621%2012.0901%2045.5792%2010.7337H50.335V9.71519C50.335%206.89152%2049.0606%205.8276%2047.0868%205.8276C44.683%205.8276%2043.5381%207.6176%2043.5381%2010.0732C43.5381%2012.8969%2044.9679%2014.2684%2047.4857%2014.2684C48.7446%2014.2684%2049.6719%2013.9456%2050.2521%2013.5574ZM56.5517%2014.107H58.7897L55.6244%209.79586L58.4116%205.98895H56.4222L53.635%209.79586V5.98895H51.6612V14.107H53.635V10.1841L56.5517%2014.107ZM43.0614%2012.5893H42.1807V5.98895H36.4303V6.68478C36.4303%208.66639%2036.2956%2011.2329%2035.6014%2012.5893H34.9849V15.9626H36.8085V14.107H41.2379V15.9626H43.0614V12.5893ZM32.1822%205.98895V9.20088H29.5504V5.98895H27.5766V14.107H29.5504V10.7186H32.1822V14.107H34.156V5.98895H32.1822ZM47.0557%207.34532C48.0348%207.34532%2048.3301%208.13696%2048.3301%209.15045V9.31181H45.5792C45.631%208.02098%2046.1076%207.34532%2047.0557%207.34532ZM40.2069%2012.5893H37.4249C37.9689%2011.364%2038.1191%209.15045%2038.1191%207.7487V7.50667H40.2069V12.5893Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='url(%23paint0_linear_161_2506)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.34239e-06%206.7997C6.34239e-06%203.04448%203.12801%200%206.98677%200C10.845%200%2013.973%203.04448%2013.973%206.7997C13.973%208.67731%2013.1914%2010.3766%2011.9282%2011.6071C11.5981%2011.9284%2011.1512%2012.287%2010.668%2012.6755C9.29995%2013.7742%207.63967%2015.1077%207.51044%2016.4898C7.48449%2016.7702%207.27586%2017%206.98625%2017C6.69717%2017%206.48853%2016.7702%206.46258%2016.4898C6.33335%2015.1077%204.67307%2013.7742%203.30499%2012.6755C2.82232%2012.287%202.37546%2011.9284%202.04538%2011.6071C0.733605%2010.3333%20-0.00249269%208.60321%206.34239e-06%206.7997ZM9.4323%206.8002C9.45197%208.11462%208.37313%209.19569%207.02265%209.21484C5.67217%209.23398%204.56144%208.18396%204.54177%206.86954C4.54142%206.84643%204.54142%206.82331%204.54177%206.8002C4.56144%205.48578%205.67217%204.43575%207.02265%204.4549C8.3454%204.47365%209.41303%205.51278%209.4323%206.8002Z'%20fill='%23FF4433'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_161_2506'%20x1='32.3141'%20y1='0'%20x2='32.3141'%20y2='17'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6122'/%3e%3cstop%20offset='1'%20stop-color='%23F22411'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Яндекс">
+            </picture>
+          </div>
+          <p class="review__text">Лучшее место для моих зубиков!
+            Иван Викторович -прекрасный врач, после него Вы точно не будете бояться стоматологов и лечил зубики ,и ставил импланты, я довольна, каждый год хожу на осмотры с удовольствием. Была на чистке, прекрасный врач сделала чистку, ни единого ...</p>
+          <a href="#" class="review__link">Читать полностью</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="profitable" id="profitable">
+  <div class="profitable__container">
+    <div class="profitable__title-blok">
+      <h2 class="profitable__title title-h2">У нас <span class="title-orange">выгодно</span></h2>
+      <div class="swiper-navigation">
+        <div class="swiper-button-prev profitable__slider-button--prev"></div>
+        <div class="swiper-button-next profitable__slider-button--next"></div>
+      </div>
+    </div>
+    <div class="swiper profitable__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide profitable__slide">
+          <img src="data:image/png;base64,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" alt="profitable" class="profitable__image">
+          <div class="profitable__slide-block">
+            <h3 class="profitable__slide-title">Дарим скидку 10%</h3>
+            <span class="profitable__text">при первом посещении</span>
+          </div>
+        </div>
+        <div class="swiper-slide profitable__slide">
+          <img src="data:image/png;base64,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" alt="profitable" class="profitable__image">
+          <div class="profitable__slide-block">
+            <h3 class="profitable__slide-title">Дарим скидку 10%</h3>
+            <span class="profitable__text">при первом посещении</span>
+          </div>
+        </div>
+        <div class="swiper-slide profitable__slide">
+          <img src="data:image/png;base64,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" alt="profitable" class="profitable__image">
+          <div class="profitable__slide-block">
+            <h3 class="profitable__slide-title">Дарим скидку 10%</h3>
+            <span class="profitable__text">при первом посещении</span>
+          </div>
+        </div>
+        <div class="swiper-slide profitable__slide">
+          <img src="data:image/png;base64,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" alt="profitable" class="profitable__image">
+          <div class="profitable__slide-block">
+            <h3 class="profitable__slide-title">Дарим скидку 10%</h3>
+            <span class="profitable__text">при первом посещении</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="contacts" id="contacts">
+  <div class="contacts__container">
+    <div class="contacts__left">
+      <h2 class="contacts__title title-h2">Начните путь<br> <span class="title-orange">к идеальной</span> улыбке</h2>
+      <p class="contacts__text">Запишитесь на первичную консультацию и диагностику. Мы составим для вас персональный план лечения уже на первом визите</p>
+      <button class="contacts__button orange-button">Записаться</button>
+    </div>
+    <div class="contacts__right">
+      <div class="contacts__address">
+        <h3 class="contacts__address-title">Адрес</h3>
+        <div class="contacts__address-city">Тула</div>
+        <div class="contacts__address-street">ул. Демонстрации, 141</div>
+      </div>
+      <div class="contacts__opening">
+        <h3 class="contacts__opening-title">Часы работы</h3>
+        <ul class="contacts__opening-date">
+          <li class="contacts__opening-item">Пн-Пт <span class="contacts__opening-time">09:00-19:00</span></li>
+          <li class="contacts__opening-item">Сб <span class="contacts__opening-time">09:00-15:00</span></li>
+          <li class="contacts__opening-item">Вс <span class="contacts__opening-time">Выходной</span></li>
+        </ul>
+      </div>
+      <div class="contacts__contacts">
+        <h3 class="contacts__contacts-title">Контакты</h3>
+        <a class="contacts__contacts-phone" href="tel:+7 (963) 225-54-45">+7 (963) 225-54-45</a>
+        <div class="contacts__contacts-socials">
+          <a href="#" class="contacts__contacts-link link">Telegram</a>
+          <a href="#" class="contacts__contacts-link link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <div id="review-popup" class="popup backdrop-blur-xs review-popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button class="popup__close close-popup"></button>
+      <h3 class="review-popup__title title-h2"><span class="title-orange">Спасибо</span>, что выбрали нас!</h3>
+        <p class="review-popup__lead">Мы ценим ваше доверие и всегда стремимся к лучшему. Ваше мнение поможет нам в этом. Пожалуйста, оставьте отзыв или пожелание.</p>
+        <form action="" class="review-popup__form">
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="name">Ваше имя</label>
+            <input class="review-popup__input" type="text" id="name" name="name" placeholder="Введите имя" required>
+          </div>
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="email">Ваш email</label>
+            <input class="review-popup__input" id="email" type="email" placeholder="Введите email" autocomplete="on" required >
+          </div>
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="text">Текст отзыва</label>
+            <textarea class="review-popup__textarea" name="text" id="text" rows="3" placeholder="Оставьте Ваш отзыв здесь" required></textarea>
+          </div>
+          <div class="review-popup__group review-popup__group-checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="review-popup__label">Даю согласие на обработку персональных данных</label>
+          </div>
+          <button type="submit" data-popup="review-popup-success" class="orange-button review-popup__button" disabled>Оставить отзыв</button>
+        </form>
+    </div>
+  </div>
+</div>
+      <div id="review-popup-success" class="popup backdrop-blur-xs review-popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button class="popup__close close-popup"></button>
+      <h3 class="review-popup__title title-h2 review-popup-success-title">Ваш отзыв <span class="title-orange">отправлен!</span></h3>
+        <p class="review-popup__lead review-popup-success-lead">Большое спасибо за уделенное время и обратную связь. Мы обязательно изучим ваше мнение. Оно действительно важно для нашего развития</p>
+        <button type="button" class="orange-button close-popup">Закрыть</button>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__content">
+      <img src="/assets/footer-logo-CnsdRt64.svg" alt="footer-logo" class="footer__logo">
+      <div class="socials-block footer__socials-block">
+        <div class="socials-block__phone">
+          <a class="socials-block__link" href="tel:+7(963)225-54-45">+7 (963) 225-54-45</a>
+        </div>
+        <div class="socials-block__socials">
+          <a class="socials-block__link" href="#">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path                 d="M8.50212 0H8.49788C3.81119 0 0 4.0365 0 9C0 10.9688 0.59925 12.7935 1.61819 14.2751L0.558875 17.6186L3.82606 16.5128C5.17013 17.4555 6.77344 18 8.50212 18C13.1888 18 17 13.9624 17 9C17 4.03763 13.1888 0 8.50212 0ZM13.4481 12.7091C13.243 13.3223 12.4291 13.8308 11.7799 13.9792C11.3358 14.0794 10.7557 14.1593 8.80281 13.302C6.30487 12.2063 4.69625 9.51863 4.57088 9.34425C4.45081 9.16988 3.5615 7.92113 3.5615 6.62963C3.5615 5.33813 4.18094 4.70925 4.43062 4.43925C4.63569 4.21763 4.97462 4.11637 5.29975 4.11637C5.40494 4.11637 5.4995 4.122 5.5845 4.1265C5.83419 4.13775 5.95956 4.1535 6.12425 4.57088C6.32931 5.094 6.82869 6.3855 6.88819 6.51825C6.94875 6.651 7.00931 6.831 6.92431 7.00538C6.84462 7.18538 6.7745 7.26525 6.64913 7.41825C6.52375 7.57125 6.40475 7.68825 6.27938 7.8525C6.16463 7.99538 6.035 8.14838 6.1795 8.41275C6.324 8.6715 6.82337 9.53438 7.55862 10.2274C8.50744 11.1218 9.27669 11.4075 9.55188 11.529C9.75694 11.619 10.0013 11.5976 10.1511 11.4289C10.3413 11.2118 10.5761 10.8518 10.8152 10.4974C10.9852 10.2431 11.1998 10.2116 11.4251 10.3016C11.6546 10.386 12.869 11.0216 13.1187 11.1533C13.3684 11.286 13.5331 11.349 13.5936 11.4604C13.6531 11.5718 13.6531 12.0949 13.4481 12.7091Z"
+                fill="currentColor" ></path>
+
+            </svg>
+          </a>
+          <a class="socials-block__link" href="#">
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path                 d="M0.418964 7.88497L4.78926 9.38135L15.1648 2.98642C15.3152 2.89368 15.4693 3.09962 15.3396 3.22L7.48453 10.5093L7.19242 14.5901C7.17018 14.9006 7.54111 15.0734 7.76124 14.8552L10.1798 12.4575L14.6012 15.8318C15.0778 16.1956 15.7678 15.9392 15.8964 15.3507L18.975 1.25802C19.1506 0.454076 18.3693 -0.224316 17.6067 0.0700983L0.396727 6.71404C-0.143144 6.92249 -0.128439 7.69758 0.418964 7.88497Z"
+                fill="currentColor " ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__menu">
+        <nav class="footer__menu-body">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="" class="footer__menu-link">Политика конфиденциальности</a></li>
+            <li class="footer__menu-item"><a href="information.html" class="footer__menu-link">Правовая информация</a></li>
+            <li class="footer__menu-item"><a href="" class="footer__menu-link">Все права защищены</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__map">
+      <div style="position:relative;overflow:hidden; width: 100%; height: 100%;"><a href="https://yandex.ru/maps/org/avtorskaya_stomatologiya/1149249355/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Авторская Стоматология</a><a           href="https://yandex.ru/maps/39/rostov-na-donu/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Стоматологическая клиника в Ростове‑на‑Дону</a><a           href="https://yandex.ru/maps/39/rostov-na-donu/category/children_dentistry/64561926512/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Детская стоматология в Ростове‑на‑Дону</a><iframe           src="https://yandex.ru/map-widget/v1/org/avtorskaya_stomatologiya/1149249355/?ll=39.688668%2C47.231419&z=14" frameborder="1" allowfullscreen="true" style="position:relative; width: 100%; height: 100%;"></iframe></div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Проверяем, является ли текущая страница главной
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        // Выбираем элемент (например, по ID, классу или тегу)
+        const element = document.querySelector('.header'); // или document.getElementById('myElement')
+
+        // Добавляем класс
+        if (element) {
+          element.classList.add('is-homepage'); // замените на нужный класс
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

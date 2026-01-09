@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite</title>
+	<link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="/assets/main-CGLXRoTp.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-Bsl3PPhv.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo logo">
+      <img src="/assets/logo-YEgf6RTj.svg" alt="logo">
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li><a class="menu__link" href="#services">Услуги</a></li>
+        <li><a class="menu__link" href="#doctors">Специалисты</a></li>
+        <li><a class="menu__link" href="#about">О клинике</a></li>
+        <li><a class="menu__link" href="#">Акции</a></li>
+        <li><a class="menu__link" href="#reviews">Отзывы</a></li>
+        <li><a class="menu__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="socials-block menu__socials-block">
+      <div class="socials-block__phone">
+        <a class="socials-block__link" href="tel:+7(963)225-54-45">+7 (963) 225-54-45</a>
+      </div>
+      <div class="socials-block__socials">
+        <a class="socials-block__link" href="#">
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M8.50212 0H8.49788C3.81119 0 0 4.0365 0 9C0 10.9688 0.59925 12.7935 1.61819 14.2751L0.558875 17.6186L3.82606 16.5128C5.17013 17.4555 6.77344 18 8.50212 18C13.1888 18 17 13.9624 17 9C17 4.03763 13.1888 0 8.50212 0ZM13.4481 12.7091C13.243 13.3223 12.4291 13.8308 11.7799 13.9792C11.3358 14.0794 10.7557 14.1593 8.80281 13.302C6.30487 12.2063 4.69625 9.51863 4.57088 9.34425C4.45081 9.16988 3.5615 7.92113 3.5615 6.62963C3.5615 5.33813 4.18094 4.70925 4.43062 4.43925C4.63569 4.21763 4.97462 4.11637 5.29975 4.11637C5.40494 4.11637 5.4995 4.122 5.5845 4.1265C5.83419 4.13775 5.95956 4.1535 6.12425 4.57088C6.32931 5.094 6.82869 6.3855 6.88819 6.51825C6.94875 6.651 7.00931 6.831 6.92431 7.00538C6.84462 7.18538 6.7745 7.26525 6.64913 7.41825C6.52375 7.57125 6.40475 7.68825 6.27938 7.8525C6.16463 7.99538 6.035 8.14838 6.1795 8.41275C6.324 8.6715 6.82337 9.53438 7.55862 10.2274C8.50744 11.1218 9.27669 11.4075 9.55188 11.529C9.75694 11.619 10.0013 11.5976 10.1511 11.4289C10.3413 11.2118 10.5761 10.8518 10.8152 10.4974C10.9852 10.2431 11.1998 10.2116 11.4251 10.3016C11.6546 10.386 12.869 11.0216 13.1187 11.1533C13.3684 11.286 13.5331 11.349 13.5936 11.4604C13.6531 11.5718 13.6531 12.0949 13.4481 12.7091Z"
+              fill="currentColor" ></path>
+
+          </svg>
+        </a>
+        <a class="socials-block__link" href="#">
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path               d="M0.418964 7.88497L4.78926 9.38135L15.1648 2.98642C15.3152 2.89368 15.4693 3.09962 15.3396 3.22L7.48453 10.5093L7.19242 14.5901C7.17018 14.9006 7.54111 15.0734 7.76124 14.8552L10.1798 12.4575L14.6012 15.8318C15.0778 16.1956 15.7678 15.9392 15.8964 15.3507L18.975 1.25802C19.1506 0.454076 18.3693 -0.224316 17.6067 0.0700983L0.396727 6.71404C-0.143144 6.92249 -0.128439 7.69758 0.418964 7.88497Z"
+              fill="currentColor " ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <button class='burger-button' type="button">
+      <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+        <path class="burger-button__line burger-button__line--1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" ></path>
+        <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80" ></path>
+        <path class="burger-button__line burger-button__line--3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" ></path>
+      </svg>
+    </button>
+  </div>
+</header>
+    <main>
+      <section class="doctors-page">
+        <div class="doctors-page__container">
+          <div class="title-block">
+            <a href="services.html" class="title-block__back"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='18'%20viewBox='0%200%2020%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.5%209H0.499999M0.499999%209L9.18571%200.5M0.499999%209L9.18571%2017.5'%20stroke='url(%23paint0_linear_238_2589)'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_238_2589'%20x1='19.0554'%20y1='0.5'%20x2='3.03567'%20y2='19.2834'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23DBAA46'/%3e%3cstop%20offset='1'%20stop-color='%23D8CB3A'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt=""></a>
+            <h1 class="information__title title">Наши <span class="title-orange">врачи</span></h1>
+            <div class="swiper doctors-page-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide doctors-page-thumbs__slide">
+                  <div class="doctors-page-thumbs__image">
+                    <img src="/assets/doctor-D8qt52Ba.png" alt="" class="doctors-page-thumbs__img">
+                  </div>
+                  <div class="doctors-page-thumbs__info">
+                    <div class="doctors-page-thumbs__name">Абрамов Иван Викторович</div>
+                    <div class="doctors-page-thumbs__speciality">Врач-стоматолог-ортопед</div>
+                  </div>
+                </div>
+                <div class="swiper-slide doctors-page-thumbs__slide">
+                  <div class="doctors-page-thumbs__image">
+                    <img src="data:image/png;base64,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" alt="" class="doctors-page-thumbs__img">
+                  </div>
+                  <div class="doctors-page-thumbs__info">
+                    <div class="doctors-page-thumbs__name">Иванова Анна Алексеевна</div>
+                    <div class="doctors-page-thumbs__speciality">Врач-стоматолог-ортопед</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div thumbsSlider="" class="swiper doctors-page-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide doctors-page-slider__slide">
+                <div class="doctors-page-slider__image">
+                  <img src="/assets/doctor-D8qt52Ba.png" alt="" class="doctors-page-slider__img">
+                </div>
+                <div class="doctors-page-slider__info">
+                  <div class="doctors-page-slider__name">Абрамов Иван Викторович</div>
+                  <div class="doctors-page-slider__speciality">Врач-стоматолог-ортопед</div>
+                  <div class="doctors-page-slider__title">График приема</div>
+                  <ul class="doctors-page-slider__list">
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Понедельник</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Вторник</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Среда</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Четверг</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Пятница</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Суббота</span>
+                      <span>09:00-15:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Воскресенье</span>
+                      <span class="doctors-page-slider__text-orange">Выходной</span>
+                    </li>
+                  </ul>
+                  <a href="" class="doctors-page-slider__button orange-button">Записаться на прием</a>
+                </div>
+              </div>
+              <div class="swiper-slide doctors-page-slider__slide">
+                <div class="doctors-page-slider__image">
+                  <img src="/assets/doctor2-DU-Q1ue1.png" alt="" class="doctors-page-slider__img">
+                </div>
+                <div class="doctors-page-slider__info">
+                  <div class="doctors-page-slider__name">Иванова Анна Алексеевна</div>
+                  <div class="doctors-page-slider__speciality">Врач-стоматолог-ортопед</div>
+                  <div class="doctors-page-slider__title">График приема</div>
+                  <ul class="doctors-page-slider__list">
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Понедельник</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Вторник</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Среда</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Четверг</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Пятница</span>
+                      <span>09:00-19:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Суббота</span>
+                      <span>09:00-15:00</span>
+                    </li>
+                    <li class="doctors-page-slider__item">
+                      <span class="doctors-page-slider__text-light">Воскресенье</span>
+                      <span class="doctors-page-slider__text-orange">Выходной</span>
+                    </li>
+                  </ul>
+                  <a href="" class="doctors-page-slider__button orange-button">Записаться на прием</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="qualifications">
+        <div class="qualifications__container">
+          <h2 class="qualifications__title title-h2">Образование и <span class="title-orange">квалификация</span></h2>
+          <div class="qualifications__tabs tabs" data-tabs="qualifications">
+            <ul class="qualifications__tabs-list tabs__nav">
+              <li class="qualifications__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Высшее образование</button></li>
+              <li class="qualifications__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Сертификация и допуски</button></li>
+              <li class="qualifications__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Последипломное образование</button></li>
+              <li class="qualifications__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Повышение квалификации</button></li>
+            </ul>
+            <div class="qualifications__tabs-content tabs__content">
+              <div class="qualifications__tabs-panel tabs__panel">
+                <div class="qualifications__slider swiper">
+                  <div class="swiper-wrapper qualifications__wrapper">
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qualifications__tabs-panel tabs__panel">
+                <div class="qualifications__slider swiper">
+                  <div class="swiper-wrapper qualifications__wrapper">
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-2-lhGBF0bz.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qualifications__tabs-panel tabs__panel">
+                <div class="qualifications__slider swiper">
+                  <div class="swiper-wrapper qualifications__wrapper">
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qualifications__tabs-panel tabs__panel">
+                <div class="qualifications__slider swiper">
+                  <div class="swiper-wrapper qualifications__wrapper">
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-2-lhGBF0bz.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                    <div class="qualifications__slide swiper-slide">
+                      <img src="/assets/doc-1-DWBJLUfR.jpg" alt="" class="partner-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="swiper-button-prev qualifications__slider-button--prev"></div>
+                <div class="swiper-button-next qualifications__slider-button--next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+  <div class="contacts__container">
+    <div class="contacts__left">
+      <h2 class="contacts__title title-h2">Начните путь<br> <span class="title-orange">к идеальной</span> улыбке</h2>
+      <p class="contacts__text">Запишитесь на первичную консультацию и диагностику. Мы составим для вас персональный план лечения уже на первом визите</p>
+      <button class="contacts__button orange-button">Записаться</button>
+    </div>
+    <div class="contacts__right">
+      <div class="contacts__address">
+        <h3 class="contacts__address-title">Адрес</h3>
+        <div class="contacts__address-city">Тула</div>
+        <div class="contacts__address-street">ул. Демонстрации, 141</div>
+      </div>
+      <div class="contacts__opening">
+        <h3 class="contacts__opening-title">Часы работы</h3>
+        <ul class="contacts__opening-date">
+          <li class="contacts__opening-item">Пн-Пт <span class="contacts__opening-time">09:00-19:00</span></li>
+          <li class="contacts__opening-item">Сб <span class="contacts__opening-time">09:00-15:00</span></li>
+          <li class="contacts__opening-item">Вс <span class="contacts__opening-time">Выходной</span></li>
+        </ul>
+      </div>
+      <div class="contacts__contacts">
+        <h3 class="contacts__contacts-title">Контакты</h3>
+        <a class="contacts__contacts-phone" href="tel:+7 (963) 225-54-45">+7 (963) 225-54-45</a>
+        <div class="contacts__contacts-socials">
+          <a href="#" class="contacts__contacts-link link">Telegram</a>
+          <a href="#" class="contacts__contacts-link link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__content">
+      <img src="/assets/footer-logo-CnsdRt64.svg" alt="footer-logo" class="footer__logo">
+      <div class="socials-block footer__socials-block">
+        <div class="socials-block__phone">
+          <a class="socials-block__link" href="tel:+7(963)225-54-45">+7 (963) 225-54-45</a>
+        </div>
+        <div class="socials-block__socials">
+          <a class="socials-block__link" href="#">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path                 d="M8.50212 0H8.49788C3.81119 0 0 4.0365 0 9C0 10.9688 0.59925 12.7935 1.61819 14.2751L0.558875 17.6186L3.82606 16.5128C5.17013 17.4555 6.77344 18 8.50212 18C13.1888 18 17 13.9624 17 9C17 4.03763 13.1888 0 8.50212 0ZM13.4481 12.7091C13.243 13.3223 12.4291 13.8308 11.7799 13.9792C11.3358 14.0794 10.7557 14.1593 8.80281 13.302C6.30487 12.2063 4.69625 9.51863 4.57088 9.34425C4.45081 9.16988 3.5615 7.92113 3.5615 6.62963C3.5615 5.33813 4.18094 4.70925 4.43062 4.43925C4.63569 4.21763 4.97462 4.11637 5.29975 4.11637C5.40494 4.11637 5.4995 4.122 5.5845 4.1265C5.83419 4.13775 5.95956 4.1535 6.12425 4.57088C6.32931 5.094 6.82869 6.3855 6.88819 6.51825C6.94875 6.651 7.00931 6.831 6.92431 7.00538C6.84462 7.18538 6.7745 7.26525 6.64913 7.41825C6.52375 7.57125 6.40475 7.68825 6.27938 7.8525C6.16463 7.99538 6.035 8.14838 6.1795 8.41275C6.324 8.6715 6.82337 9.53438 7.55862 10.2274C8.50744 11.1218 9.27669 11.4075 9.55188 11.529C9.75694 11.619 10.0013 11.5976 10.1511 11.4289C10.3413 11.2118 10.5761 10.8518 10.8152 10.4974C10.9852 10.2431 11.1998 10.2116 11.4251 10.3016C11.6546 10.386 12.869 11.0216 13.1187 11.1533C13.3684 11.286 13.5331 11.349 13.5936 11.4604C13.6531 11.5718 13.6531 12.0949 13.4481 12.7091Z"
+                fill="currentColor" ></path>
+
+            </svg>
+          </a>
+          <a class="socials-block__link" href="#">
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path                 d="M0.418964 7.88497L4.78926 9.38135L15.1648 2.98642C15.3152 2.89368 15.4693 3.09962 15.3396 3.22L7.48453 10.5093L7.19242 14.5901C7.17018 14.9006 7.54111 15.0734 7.76124 14.8552L10.1798 12.4575L14.6012 15.8318C15.0778 16.1956 15.7678 15.9392 15.8964 15.3507L18.975 1.25802C19.1506 0.454076 18.3693 -0.224316 17.6067 0.0700983L0.396727 6.71404C-0.143144 6.92249 -0.128439 7.69758 0.418964 7.88497Z"
+                fill="currentColor " ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__menu">
+        <nav class="footer__menu-body">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="" class="footer__menu-link">Политика конфиденциальности</a></li>
+            <li class="footer__menu-item"><a href="information.html" class="footer__menu-link">Правовая информация</a></li>
+            <li class="footer__menu-item"><a href="" class="footer__menu-link">Все права защищены</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__map">
+      <div style="position:relative;overflow:hidden; width: 100%; height: 100%;"><a href="https://yandex.ru/maps/org/avtorskaya_stomatologiya/1149249355/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Авторская Стоматология</a><a           href="https://yandex.ru/maps/39/rostov-na-donu/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Стоматологическая клиника в Ростове‑на‑Дону</a><a           href="https://yandex.ru/maps/39/rostov-na-donu/category/children_dentistry/64561926512/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Детская стоматология в Ростове‑на‑Дону</a><iframe           src="https://yandex.ru/map-widget/v1/org/avtorskaya_stomatologiya/1149249355/?ll=39.688668%2C47.231419&z=14" frameborder="1" allowfullscreen="true" style="position:relative; width: 100%; height: 100%;"></iframe></div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Проверяем, является ли текущая страница главной
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        // Выбираем элемент (например, по ID, классу или тегу)
+        const element = document.querySelector('.header'); // или document.getElementById('myElement')
+
+        // Добавляем класс
+        if (element) {
+          element.classList.add('is-homepage'); // замените на нужный класс
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
