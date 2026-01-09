@@ -1,0 +1,24 @@
+Фикс бага с сохранением изображений () в плагине vite-plugin-html-img-to-picture заменить код
+async writeBundle() {
+  const distDir = config.build.outDir || 'dist';  // ← Фикс: используем outDir Vite (по умолчанию 'dist')
+  const fullDistPath = path.resolve(config.root, distDir);  // ← Резолв от корня проекта (./Vite/dist)
+
+  if (processedImages.length > 0) {
+    console.log(
+      `Writing ${processedImages.length} optimized images to dist...`,
+    );
+  }
+
+  for (const image of processedImages) {
+    try {
+      const destPath = path.join(fullDistPath, image.finalPath.replace(/^\//, ''));  // ← Убираем ведущий / из outputDir
+      await fs.mkdir(path.dirname(destPath), { recursive: true });
+      await fs.writeFile(destPath, image.buffer);
+    } catch (error) {
+      console.warn(
+        `Failed to write image ${image.finalPath}:`,
+        error.message,
+      );
+    }
+  }
+},

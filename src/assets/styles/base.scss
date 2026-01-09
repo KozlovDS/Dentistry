@@ -1,0 +1,314 @@
+@use "sass:math";
+@use "variables" as *;
+@use "mixins" as *;
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f9f9f9;
+  overflow: clip;
+
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+}
+
+@if ($responsiveType == 1) {
+  // Отзывчивая версия (fluid с фиксированной max-width на всех экранах)
+  [class*="__container"] {
+    @if ($maxWidthContainer > 0) {
+      max-width: rem($maxWidthContainer);
+      margin: 0 auto;
+    }
+    @if ($containerPadding > 0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+} @else {
+  // По брейк-поинтам — mobile-first
+  [class*="__container"] {
+    width: 100%;
+    margin: 0 auto;
+
+    // Боковые отступы всегда (gutters)
+    @if ($containerPadding > 0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+
+    // ≥768px — 688px
+    @media (min-width: $mobile) {
+      max-width: rem(688 + $containerPadding);
+    }
+
+    // ≥1280px — 1024px
+    @media (min-width: $tablet) {
+      max-width: rem(1024 + $containerPadding);
+    }
+
+    // ≥1440px — 1240px
+    @media (min-width: $pc) {
+      max-width: rem(1240 + $containerPadding);
+    }
+
+    // ≥1920px — 1460px (или можно оставить на 1440+, если не нужен отдельный брейкпоинт)
+    @media (min-width: $large) {
+      max-width: rem($containerWidth); // 1460px
+    }
+  }
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: transparent;
+    border-color: $accentColor;
+  }
+  .menu {
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: rem(-15);
+      width: 100%;
+      border-bottom: solid 1px $accentColor;
+      transform: scaleX(0);
+      transition: transform 200ms ease-in-out;
+    }
+    a:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@media (hover: none) {
+  button:active {
+    background-color: $accentColor;
+    color: #000;
+  }
+  .menu {
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: rem(-15);
+      width: 100%;
+      border-bottom: solid 1px $accentColor;
+      transform: scaleX(0);
+      transition: transform 200ms ease-in-out;
+    }
+    a:active::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.orange-button {
+  font-weight: 500;
+  border-radius: rem(62);
+  font-size: rem(16);
+  line-height: 110%;
+  padding: rem(15) rem(50);
+  color: $mainColor;
+  background: $linearGradient;
+  transition: color 0.3s linear, background 0.3s linear;
+
+  @media (width > $mobile) {
+    padding: rem(16) rem(50);
+  }
+
+  @media (width > $pc) {
+    font-size: rem(18);
+    padding: rem(19) rem(50);
+  }
+
+  &:hover {
+    color: $black;
+    background: $linearGradientHover;
+  }
+}
+
+.title-h2 {
+  font-weight: 700;
+  font-size: rem(20);
+  line-height: 130%;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (width > $mobile) {
+    font-size: rem(26);
+  }
+
+  @media (width > $tablet) {
+    font-size: rem(30);
+  }
+
+  @media (width > $pc) {
+    font-size: rem(34);
+  }
+
+  @media (width > $large) {
+    font-size: rem(44);
+  }
+}
+
+section {
+  margin-bottom: rem(80);
+  scroll-margin-top: 100px;
+
+  @media (width > $mobile) {
+    margin-bottom: rem(100);
+    scroll-margin-top: 140px;
+  }
+  @media (width > $tablet) {
+    margin-bottom: rem(120);
+    scroll-margin-top: 160px;
+  }
+  @media (width > $pc) {
+    margin-bottom: rem(150);
+    scroll-margin-top: 180px;
+  }
+  @media (width > $large) {
+    margin-bottom: rem(180);
+    scroll-margin-top: 200px;
+  }
+}
+
+.swiper-navigation {
+  display: flex;
+  gap: rem(14);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: rem(40);
+  height: rem(40);
+  border-radius: 100px;
+  background: linear-gradient(136deg, #dbaa46 0%, #d8cb3a 100%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.3s linear, opacity 0.3s linear;
+
+  &::before {
+    content: "";
+    width: rem(16);
+    height: rem(15);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.5 7.5H15.5M15.5 7.5L8.64286 0.5M15.5 7.5L8.64286 14.5' stroke='%23F3F3F3' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
+  }
+
+  svg {
+    display: none !important;
+  }
+}
+
+.swiper-button-prev::before {
+  transform: rotate(180deg);
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.link {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+  border-radius: rem(30);
+  font-size: rem(14);
+  line-height: 140%;
+  color: $accentColor;
+  padding: rem(8) rem(18);
+  border: 1px solid $accentColor;
+  text-transform: none;
+
+  @media (width > $tablet) {
+    color: $mainColor;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: rem(14) 0;
+    border-bottom: 1px solid $accentColor;
+    justify-content: space-between;
+  }
+
+  @media (width > $pc) {
+    font-size: rem(16);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: rem(9);
+    height: rem(9);
+    transition: rotate 0.3s ease-in-out;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.5 8.5L8.5 0.5M8.5 0.5H2M8.5 0.5V7' stroke='url(%23paint0_linear_2025_222)' stroke-linecap='round' stroke-linejoin='round' /%3e%3cdefs%3e%3clinearGradient id='paint0_linear_2025_222' x1='0.687184' y1='0.5' x2='8.31282' y2='8.5' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23DBAA46' /%3e%3cstop offset='1' stop-color='%23D8CB3A' /%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  }
+
+  &:hover::after {
+    rotate: 45deg;
+  }
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 20px;
+  color: $black;
+  @media (width > $mobile) {
+    margin-top: 30px;
+  }
+}
+
+.title-block__back {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $accentColor;
+  background-color: #fff;
+  transition: scale 0.1s linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.tabs__panel {
+  display: none;
+}
+
+.tabs__nav {
+  list-style: none;
+  display: flex;
+}
+
+.tabs__panel--active {
+  display: block;
+}

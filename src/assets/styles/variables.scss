@@ -1,0 +1,32 @@
+@use "mixins" as *;
+
+$fontFamily: "Montserrat Thin", sans-serif;
+$secondFamily: "Inter", sans-serif;
+
+$mainColor: #f3f3f3;
+$accentColor: #dbaa46;
+$black: #141414;
+$light-txt: #848484;
+
+$linearGradient: linear-gradient(136deg, #dbaa46 0%, #d8cb3a 100%);
+$linearGradientHover: linear-gradient(136deg, #f9c535 0%, #d8cb3a 100%);
+
+$fontSize: rem(16);
+$minWidth: 375;
+$maxWidth: 1920;
+$maxWidthContainer: 1460;
+$containerPadding: 30;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты (em для корректной работы при изменении root font-size)
+$mobile: em(767.8); // от 768px — мобильный
+$tablet: em(1279.8); // от 1280px
+$pc: em(1439.8); // от 1440px
+$large: em(1579.8); // от 1580px
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 2;

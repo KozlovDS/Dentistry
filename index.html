@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<include name="head" title="Vite" />
+
+<body>
+  <div class="wrapper">
+    <include name="header" />
+    <main>
+      <include name="hero" />
+      <include name="about" />
+      <include name="services" />
+      <include name="recording" />
+      <include name="doctors" />
+      <include name="reviews" />
+      <include name="profitable" />
+      <include name="contacts" />
+      <include name="popup" id="review-popup" class="review-popup">
+        <h3 class="review-popup__title title-h2"><span class="title-orange">Спасибо</span>, что выбрали нас!</h3>
+        <p class="review-popup__lead">Мы ценим ваше доверие и всегда стремимся к лучшему. Ваше мнение поможет нам в этом. Пожалуйста, оставьте отзыв или пожелание.</p>
+        <form action="" class="review-popup__form">
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="name">Ваше имя</label>
+            <input class="review-popup__input" type="text" id="name" name="name" placeholder="Введите имя" required>
+          </div>
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="email">Ваш email</label>
+            <input class="review-popup__input" id="email" type="email" placeholder="Введите email" autocomplete="on" required />
+          </div>
+          <div class="review-popup__group">
+            <label class="review-popup__label" for="text">Текст отзыва</label>
+            <textarea class="review-popup__textarea" name="text" id="text" rows="3" placeholder="Оставьте Ваш отзыв здесь" required></textarea>
+          </div>
+          <div class="review-popup__group review-popup__group-checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="review-popup__label">Даю согласие на обработку персональных данных</label>
+          </div>
+          <button type="submit" data-popup="review-popup-success" class="orange-button review-popup__button" disabled>Оставить отзыв</button>
+        </form>
+      </include>
+      <include name="popup" id="review-popup-success" class="review-popup">
+        <h3 class="review-popup__title title-h2 review-popup-success-title">Ваш отзыв <span class="title-orange">отправлен!</span></h3>
+        <p class="review-popup__lead review-popup-success-lead">Большое спасибо за уделенное время и обратную связь. Мы обязательно изучим ваше мнение. Оно действительно важно для нашего развития</p>
+        <button type="button" class="orange-button close-popup">Закрыть</button>
+      </include>
+    </main>
+    <include name="footer" />
+  </div>
+  <script type="module" src="./src/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Проверяем, является ли текущая страница главной
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        // Выбираем элемент (например, по ID, классу или тегу)
+        const element = document.querySelector('.header'); // или document.getElementById('myElement')
+
+        // Добавляем класс
+        if (element) {
+          element.classList.add('is-homepage'); // замените на нужный класс
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "C:\\Users\\Дмитрий\\Documents\\project\\Dentistry\\src\\assets\\fonts\\Inter-Bold.ttf": {
+    "hash": "c7b5fabc34e7d60044a1dca4ac845774",
+    "metadata": {
+      "family": "Inter",
+      "weight": 700,
+      "style": "normal",
+      "isVariable": false
+    }
+  },
+  "C:\\Users\\Дмитрий\\Documents\\project\\Dentistry\\src\\assets\\fonts\\Inter-Regular.ttf": {
+    "hash": "4145168e52304666dee7c976559aa0e4",
+    "metadata": {
+      "family": "Inter",
+      "weight": 400,
+      "style": "normal",
+      "isVariable": false
+    }
+  },
+  "C:\\Users\\Дмитрий\\Documents\\project\\Dentistry\\src\\assets\\fonts\\Montserrat-VariableFont_wght.ttf": {
+    "hash": "4d444017fdf9afc55059d7acb4c6c98f",
+    "metadata": {
+      "family": "Montserrat Thin",
+      "weight": 100,
+      "style": "normal",
+      "isVariable": true
+    }
+  }
+}

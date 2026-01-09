@@ -1,0 +1,149 @@
+@use "../../../styles/mixins.scss" as *;
+@use "../../../styles/variables.scss" as *;
+// <SELECT>
+// Снипет (HTML): sel
+.select {
+  position: relative;
+  // .select__body
+  &__body {
+    position: relative;
+  }
+  // .select__title
+  &__title {
+    color: inherit;
+    text-align: left;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: rem(14);
+  }
+  // .select__value
+  &__value {
+    display: flex;
+    align-items: center;
+    padding: rem(15);
+    gap: rem(10);
+    color: $black;
+    > * {
+      flex: 1 1 auto;
+    }
+
+    @media (width > $pc) {
+      padding: rem(20);
+    }
+
+    @media (width > $large) {
+      font-size: rem(18);
+    }
+
+    &._select-pseudo-label {
+      &::before {
+        content: attr(data-pseudo-label);
+        opacity: 0.5;
+      }
+    }
+  }
+  // .select__text
+  &__text {
+    flex: 1 1 auto;
+  }
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+  }
+  // .select__options
+  &__options {
+    color: #000;
+    position: absolute;
+    top: 30px;
+    border-radius: 0 0 rem(14) rem(14);
+    min-width: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 0;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 20px 0px 5px 0px;
+
+    @media (width > $pc) {
+      top: 40px;
+    }
+  }
+  // .select__scroll
+  &__scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    // Максимальная высота
+    max-height: 200px;
+    // Стили скроллбара
+    .simplebar-scrollbar {
+      &::before {
+        //opacity: 1;
+      }
+    }
+  }
+  // .select__option
+  &__option {
+    width: 100%;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: inherit;
+    &._select-selected {
+      background-color: #eee;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    width: rem(13);
+    height: rem(10);
+    transition: all 0.3s ease 0s;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.1387 2.99957L6.81891 9.31934L0.499139 2.99957' stroke='%23848484' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
+    position: absolute;
+    top: 50%;
+    right: rem(15);
+    transform: translateY(-50%);
+  }
+
+  &._active:after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  // Конструкция дополнительных данных
+  &__row {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__asset {
+  }
+  &__text {
+  }
+
+  // Состояния селекта
+  &._select-open {
+    z-index: 5;
+  }
+  &._select-disabled {
+  }
+  &._select-active {
+  }
+  &._select-focus {
+  }
+  &._select-multiple {
+  }
+  &._select-checkbox {
+  }
+}
+
+// Тег
+._select-tag {
+  cursor: pointer;
+}

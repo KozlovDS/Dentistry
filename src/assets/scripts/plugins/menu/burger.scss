@@ -1,0 +1,64 @@
+@use "../../../styles/variables" as *;
+
+.burger-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  border-radius: 3.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s linear, border-color 0.3s linear;
+  position: relative;
+  z-index: 10;
+  @media (width < $tablet) {
+    display: flex;
+  }
+}
+
+.burger-button__line {
+  transition: stroke-dasharray 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  fill: none;
+  stroke: $accentColor; /* var(--color-accent) */
+  /* var(--color-white) */
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 60 207;
+  transform-origin: center;
+}
+
+.burger-button__line--2 {
+  stroke-dasharray: 60 60;
+}
+
+.burger-button.active .burger-button__line {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+
+.burger-button.active .burger-button__line--2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+.burger-button:not(.active) .burger-button__line--3 {
+  stroke-dasharray: 30 207;
+  stroke-dashoffset: -30;
+}
+
+/* Анимация вращения крестика */
+.burger-button.active svg {
+  transform: rotate(90deg);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-button svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
